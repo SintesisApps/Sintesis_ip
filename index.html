@@ -606,7 +606,10 @@ function LeerNota(id)
 <div id="galeria" class="TransicionFadeOut" style="background-image:url(imagenes/black_linen_v2.png)"  >
  
   <div class="HeaderAlternativo">
-    <div style=" display:inline-block; padding-top:0px; width:10%; padding-left:10px;"> <a href="javascript:;" onClick="history.back(-1);"> <img src="imagenes/iconos/azules/regresar@2x.png" width="50" > </a> </div>
+    <div style=" display:inline-block; padding-top:0px; width:30px; padding-left:10px;"> <a href="javascript:;" onClick="history.back(-1);"> <img src="imagenes/iconos/azules/regresar@2x.png" width="50" > </a> </div>
+    
+    <div style=" display:inline-block; padding-top:0px; width:50px; padding-left:10px;"> <a href="javascript:;" onClick="$('#panelSecciones').css('left','0');"> <img src="imagenes/iconos/azules/seccion@2x.png" width="50" > </a></div>
+    
     <div style=" display:inline-block; width:75%; vertical-align: top; padding-top:10px; text-align:center;"> <img src="imagenes/logo.png" height="25"> </div>
   </div>
   
@@ -626,8 +629,16 @@ function LeerNota(id)
 <!--Ubicacion-->
 <div id="ubicacion" class="TransicionFadeOut" style="background-image:url(imagenes/black_linen_v2.png)"  >
   <div class="HeaderAlternativo">
-    <div style=" display:inline-block; padding-top:0px; width:10%; padding-left:10px;"> <a href="javascript:;" onClick="history.back(-1);"> <img src="imagenes/iconos/azules/regresar@2x.png" width="50" > </a> </div>
+    <div style=" display:inline-block; padding-top:0px; width:30px; padding-left:10px;"> <a href="javascript:;" onClick="history.back(-1);"> <img src="imagenes/iconos/azules/regresar@2x.png" width="50" > </a> </div>
+    
+    <div style=" display:inline-block; padding-top:0px; width:50px; padding-left:10px;"> <a href="javascript:;" onClick="$('#panelSecciones').css('left','0');"> <img src="imagenes/iconos/azules/seccion@2x.png" width="50" > </a></div>
+    
+    
+    
     <div class="logo1"> <img src="imagenes/logo.png" height="25"> </div>
+    
+    
+    
     
   </div>
   <div style="height:95%; width:100%; padding-top:0px; padding-bottom:0px;">
@@ -640,7 +651,9 @@ function LeerNota(id)
 <!--Video-->
 <div id="video" class="TransicionFadeOut" style="background-image:url(imagenes/black_linen_v2.png)"  >
   <div class="HeaderAlternativo">
-    <div style=" display:inline-block; padding-top:0px; width:10%; padding-left:10px;"> <a href="javascript:;" onClick="history.back(-1);"> <img src="imagenes/iconos/azules/regresar@2x.png" width="50" > </a> </div>
+    <div style=" display:inline-block; padding-top:0px; width:30px; padding-left:10px;"> <a href="javascript:;" onClick="history.back(-1);"> <img src="imagenes/iconos/azules/regresar@2x.png" width="50" > </a> </div>
+    <div style=" display:inline-block; padding-top:0px; width:50px; padding-left:10px;"> <a href="javascript:;" onClick="$('#panelSecciones').css('left','0');"> <img src="imagenes/iconos/azules/seccion@2x.png" width="50" > </a></div>
+    
     <div style=" display:inline-block; width:75%; vertical-align: top; padding-top:10px; text-align:center;"> <img src="imagenes/logo.png" height="25"> </div>
     
   </div>
@@ -667,6 +680,8 @@ return false;
 <div id="guia" class="TransicionFadeOut" style="background-image:url(imagenes/black_linen_v2.png)"  >
   <div class="HeaderAlternativo">
     <div style=" display:inline-block; padding-top:0px; width:10%; padding-left:10px;"> <a href="javascript:;" onClick="history.back(-1);"> <img src="imagenes/iconos/azules/regresar@2x.png" width="50" > </a> </div>
+    <div style=" display:inline-block; padding-top:0px; width:50px; padding-left:10px;"> <a href="javascript:;" onClick="$('#panelSecciones').css('left','0');"> <img src="imagenes/iconos/azules/seccion@2x.png" width="50" > </a></div>
+    
     <div style=" display:inline-block; width:75%; vertical-align: top; padding-top:10px; text-align:center;"> <img src="imagenes/logo.png" height="25"> </div>
     
   </div>
@@ -789,12 +804,16 @@ return false;
 <!--Panel de Secciones de Impreso-->
 
 <div id="panelSeccionesImpreso"  class="panelSeccion" style=" min-width:20%;"> 
+
+<!--<div style=" display:inline-block; padding-top:0px; width:30px; vertical-align:top;padding-left:5px;"> <a href="#home"> <img src="http://166.78.193.53/APPSintesis/imagenes/home@2x.png" width="50" > </a>
+     </div>-->
+     
  <a href="#home" onClick="$('#panelSeccionesImpreso').css('left','-250%'),CargarNoticiasHome();">
-  <div class="panelSeccionTitulo" style="background-image:url(http://166.78.193.53/RecursosApp/ios/imagenes/iconos/azules/home@2x.png);"> Home </div>
+  <div class="panelSeccionTitulo2" style="background-image:url(http://166.78.193.53/APPSintesis/imagenes/home@2x.png);"> Home </div></a>
 
   <div class="paneSeccionEdicion"> Edicion Impresa </div>
    <a href="#impreso-portadas" onClick="$('#panelSeccionesImpreso').css('left','-250%');ImprimirImpresoTodas('Puebla');">
-  <div class="panelSeccionTitulo2"> Puebla </div>
+  <div class="panelSeccionTitulo2"> Puebla </div>  
   </a>
   
    <div class="panelSeccionSpacer"> </div>
@@ -948,7 +967,7 @@ function ImprimirImpresoTodas(plaza)
 <div id="panelSecciones"  class="panelSeccion"> 
   <a href="#home" onClick="$('#panelSecciones').css('left','-250%'), CargarNoticiasHome();">
   <div class="panelSeccionTitulo" style="background-image:url(imagenes/iconos/azules/home@2x.png);"> Home </div>
-  
+  </a>
   <div class="paneSeccionEdicion"> Secciones </div>
   </a>
   <a href="#secciones" onClick="$('#panelSecciones').css('left','-250%'), CargarNoticiasPlaza('nacionales');">
