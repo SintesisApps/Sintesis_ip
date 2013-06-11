@@ -693,8 +693,8 @@ return false;
 <div id="impreso"  class="TransicionFadeOut" >
   <div class="HeaderAlternativo">
     
-    <div style=" display:inline-block; padding-top:0px; width:30px; vertical-align:top;padding-left:5px;"> <a href="#home"> <img src="http://166.78.193.53/APPSintesis/imagenes/home@2x.png" width="50" > </a>
-     </div>
+    <!--<div style=" display:inline-block; padding-top:0px; width:30px; vertical-align:top;padding-left:5px;"> <a href="#home"> <img src="http://166.78.193.53/APPSintesis/imagenes/home@2x.png" width="50" > </a>
+     </div>-->
      
      <div style=" display:inline-block; padding-top:0px; width:50px;padding-left:10px; "> <a href="javascript:;" onClick="$('#panelSeccionesImpreso').css('left','0');"> <img src="imagenes/iconos/azules/seccion@2x.png" width="50" > </a>
      </div>
@@ -789,6 +789,9 @@ return false;
 <!--Panel de Secciones de Impreso-->
 
 <div id="panelSeccionesImpreso"  class="panelSeccion" style=" min-width:20%;"> 
+ <a href="#home" onClick="$('#panelSeccionesImpreso').css('left','-250%'),CargarNoticiasHome();">
+  <div class="panelSeccionTitulo" style="background-image:url(http://166.78.193.53/RecursosApp/ios/imagenes/iconos/azules/home@2x.png);"> Home </div>
+
   <div class="paneSeccionEdicion"> Edicion Impresa </div>
   
   <a href="#impreso-portadas" onClick="ImprimirImpresoTodas('Nacional');$('#panelSeccionesImpreso').css('left','-250%');">
