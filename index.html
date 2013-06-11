@@ -39,12 +39,17 @@
 	
 	function onDeviceReady() {
 		if (navigator.onLine) {
-			alert("conectado");
+			setInterval(function() {navigator.splashscreen.hide();}, 2000);
+						slidePrincipal();
+						slideVertical();
+						CargarNoticiasHomeGal();
+						galeria_video('nacionales');
+						setInterval(function(){document.getElementById("cargando").style.display='none'},14000);
 			
 		}
 		else
 		{
-			alert("No se detectó conexión a Internet");	
+			alert("No se detectó conexión a Internet");   	
 		}
 		
 	}
