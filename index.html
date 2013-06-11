@@ -39,7 +39,7 @@
 	
 	function onDeviceReady() {
 		if (navigator.onLine) {
-			setInterval(function() {navigator.splashscreen.hide();}, 2000);
+			setInterval(function() {navigator.splashscreen.hide();}, 5000);
 						slidePrincipal();
 						slideVertical();
 						CargarNoticiasHomeGal();
@@ -272,12 +272,10 @@
 	{			
 			document.getElementById("cargando").style.display='';
 			/*limpiamos*/
-			/*document.getElementById("name_SeccionSeccion").innerHTML="";
+			document.getElementById("name_SeccionSeccion").innerHTML="";
 			document.getElementById("content_secc").innerHTML="";
 			document.getElementById("vertical_seccion").innerHTML="";
-			document.getElementById("minuto_plaza").innerHTML="";
-			document.getElementById("vs").innerHTML="";
-			document.getElementById("img_sup").innerHTML="";*/
+			
 			$.ajax(
 			{
 
@@ -328,6 +326,10 @@
 			//$('.ContenedorPrincipalSeccion').html('<img src="imagenes/loading.gif" />');
 			//$('.DivVertical').html('<img src="imagenes/loading.gif" />');
 		document.getElementById("cargando").style.display='';
+		/*limpiamos*/
+			document.getElementById("name_SeccionSeccion").innerHTML="";
+			document.getElementById("content_secc").innerHTML="";
+			document.getElementById("vertical_seccion").innerHTML="";
 		 $.ajax(
 			{
 
