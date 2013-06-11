@@ -70,7 +70,7 @@ div.ps-caption
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#303130), color-stop(100%,#000101));
 	border-bottom: 1px solid #42403f;
 	color: #ffffff;
-	font-size: 13px;
+	font-size: 17px;
 	font-family: "Lucida Grande", Helvetica, Arial,Verdana, sans-serif;
 	text-align: center;
 }
@@ -98,7 +98,7 @@ div.ps-toolbar
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#303130), color-stop(100%,#000101));
 	border-top: 1px solid #42403f;
 	color: #ffffff;
-	font-size: 13px;
+	font-size: 17px;
 	font-family: "Lucida Grande", Helvetica, Arial,Verdana, sans-serif;
 	text-align: center;
 	height: 44px;

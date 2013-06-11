@@ -39,10 +39,17 @@
 				document.addEventListener("deviceready", function(){
 					if (navigator.onLine) {
 						alert("conectado");
+						 setInterval(function() {navigator.splashscreen.hide();}, 2000);
+						slidePrincipal();
+						slideVertical();
+						CargarNoticiasHomeGal();
+						galeria_video('nacionales');
+						setInterval(function(){document.getElementById("cargando").style.display='none'},14000);
+						 
 					}
 					else
 					{
-						alert("no conectado");
+						alert("No se detectó conexión a Internet");
 					}
  				//mantenemos el loding por 7 segundo
 				/*slidePrincipal();
@@ -246,7 +253,13 @@
 	function CargarNoticiasPlaza(plaza)
 	{			
 			document.getElementById("cargando").style.display='';
-
+			/*limpiamos*/
+			/*document.getElementById("name_SeccionSeccion").innerHTML="";
+			document.getElementById("content_secc").innerHTML="";
+			document.getElementById("vertical_seccion").innerHTML="";
+			document.getElementById("minuto_plaza").innerHTML="";
+			document.getElementById("vs").innerHTML="";
+			document.getElementById("img_sup").innerHTML="";*/
 			$.ajax(
 			{
 
@@ -468,7 +481,7 @@ function LeerNota(id)
   <!--Contenedor Minuti a Minuto Video y Suplementos-->
   <div class="ContenedorDivMedio">
     <div class="ContenedorMinutovideo">
-      <div class="Minuto_A_Minuto">
+      <div class="Minuto_A_Minuto" id="minuto_plaza">
        <!-- minuto a minuto -->
       </div>
       <a href="#video"><div class="Video"> <img src="imagenes/video.png"> </div></a>
@@ -547,7 +560,7 @@ function LeerNota(id)
   	
   </div>
     <!--Slide Principal Plaza-->
-    <div class="ContenedorPrincipalSeccion">
+    <div class="ContenedorPrincipalSeccion" id="content_secc">
     
       <div style="float:left;margin-right:-30000px;">
         
