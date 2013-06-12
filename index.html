@@ -44,6 +44,7 @@
 						slideVertical();
 						CargarNoticiasHomeGal();
 						galeria_video('nacionales');
+						refrescar_impreso();
 						setInterval(function(){document.getElementById("cargando").style.display='none'},14000);
 			
 		}
@@ -238,7 +239,7 @@
 		slideMiniatura();
 		minuto_minuto();
 		*/
-		
+		refrescar_impreso();
 		document.getElementById("cargando").style.display='';
 		slideVertical2();
 		slidePrincipal();
@@ -448,7 +449,11 @@ function LeerNota(id)
 			});
 	}
 
-
+function refrescar_impreso()
+{
+/*limpiamos contenedor*/
+document.getElementById("ContenedorImagenImpreso").innerHTML="";
+}
 
 </script>
 
@@ -873,6 +878,7 @@ return false;
 <script>
 function ImprimirImpresoTodas(plaza)
 	{
+		refrescar_impreso();
 			$.ajax(
 			{
 
